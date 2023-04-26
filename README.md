@@ -13,4 +13,5 @@ python3 pathfinding.py <NIFTI>
 
 To do:
 
+- Create more assests for players
 - everything else
