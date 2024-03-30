@@ -1,14 +1,11 @@
 # Define a function that returns the cost of moving from one node to another.
-# In this example, we use the distance between two nodes as the cost.
 def get_cost(node, neighbor):
     return node.distance_to(neighbor)
 
 # Define the heuristic function that estimates the distance between a node and the goal.
-# In this example, we use the Euclidean distance between two nodes.
 def heuristic(node, goal):
     return node.distance_to(goal)
 
-# Define the A* algorithm.
 def a_star(start, goal, nodes):
     frontier = []  # Use a list to store nodes to explore.
     heapq.heappush(frontier, (0, start))  # Push the start node onto the heap.
